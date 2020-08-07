@@ -338,6 +338,30 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url(/fonts/Proxima-Nova/ProximaNova-Bold.woff);
+}
+@font-face {
+  font-family: "Proxima-Semibold";
+  src: url(/fonts/Proxima-Nova/ProximaNova-Semibold.woff);
+}
+@font-face {
+  font-family: "PTsans-Bold";
+  src: url(/fonts/PT-Sans/PTSans-Bold.woff);
+}
+@font-face {
+  font-family: "PTsans-BoldItalic";
+  src: url(/fonts/PT-Sans/PTSans-BoldItalic.woff);
+}
+@font-face {
+  font-family: "PTsans-Italic";
+  src: url(/fonts/PT-Sans/PTSans-Italic.woff);
+}
+@font-face {
+  font-family: "PTsans-Regular";
+  src: url(/fonts/PT-Sans/PTSans-Regular.woff);
+}
 .header {
   padding: 0 calc(50vw - 585px);
   display: flex;
@@ -375,6 +399,7 @@ template {
   margin-left: 1.56rem;
 }
 .header .header-nav .header-nav-menu .header-nav-menu__item .header-nav-menu__link {
+  font-family: "Proxima-Semibold";
   text-decoration: none;
   color: #ffffff;
 }
@@ -389,11 +414,13 @@ template {
 .header .header-text__title {
   text-align: center;
   max-width: 950px;
+  font-family: "Proxima-Bold";
   font-size: 3.75em;
   text-transform: uppercase;
 }
 .header .header-text__subtitle {
   max-width: 650px;
+  font-family: "PTsans-Italic";
   font-size: 1.875em;
 }
 
@@ -422,6 +449,7 @@ template {
 .about-content-icon__text {
   width: 183px;
   text-align: center;
+  font-family: "Proxima-Semibold";
   font-size: 2.25em;
   text-transform: uppercase;
   color: #ffffff;
@@ -435,17 +463,22 @@ template {
   flex-direction: column;
   align-items: center;
   text-align: left;
+  font-family: "PTsans-Regular";
   font-size: 1.25em;
   color: #665f60;
+}
+.about-description__text_bold {
+  font-family: "PTsans-Bold";
 }
 .about-description__btn {
   width: 195px;
   height: 55px;
+  margin: 100px 0;
+  font-family: "PTsans-Italic";
   background-color: #ebebeb;
   color: #7d7a7c;
   outline: none;
   border: 1px solid #7d7a7c;
-  margin: 100px 0;
 }
 
 .services {
@@ -473,11 +506,13 @@ template {
 }
 .services-list-item__title {
   margin: 30px 0 25px 0;
+  font-family: "PTsans-Bold";
   font-size: 24px;
 }
 .services-list-item__sub-title {
   margin: 0 auto;
   max-width: 190px;
+  font-family: "PTsans-Italic";
   font-size: 18px;
   text-align: center;
 }
@@ -500,15 +535,20 @@ template {
   margin-top: 100px;
 }
 .services .services-our__title {
+  font-family: "Proxima-Semibold";
   font-size: 36px;
   text-align: center;
 }
 .services .services-our__sub-title {
   margin: 0 auto;
   margin-top: 120px;
-  max-width: 300px;
+  max-width: 350px;
+  font-family: "PTsans-Italic";
   font-size: 18px;
   text-align: center;
+}
+.services .services-our__sub-title_bold {
+  font-family: "PTsans-Bold";
 }
 
 .works {
@@ -527,6 +567,7 @@ template {
 }
 .works .works-content__title {
   margin: 35px 0 70px 0;
+  font-family: "Proxima-Semibold";
   font-size: 36px;
 }
 .works .works-block {
@@ -538,6 +579,7 @@ template {
   width: 195px;
   height: 50px;
   border: 1px solid #ffffff;
+  font-family: "PTsans-Italic";
   outline: none;
   color: #ffffff;
   background-color: transparent;
@@ -613,6 +655,7 @@ template {
 .team-content {
   padding-top: 90px;
   text-align: center;
+  font-family: "Proxima-Semibold";
   font-size: 36px;
   color: #665f60;
 }
@@ -670,4 +713,9 @@ template {
 .team-slider .slick-next {
   right: 0;
   background: url(/img/team-slider_arrow-right.png) 0 0/100% no-repeat;
+}
+
+#map {
+  height: 400px;
+  width: 500px;
 }

@@ -3,11 +3,6 @@
 @import "_fonts.scss";
 @import "_mixins.scss";
 
-// .sticky-menu {
-//   position: fixed;
-//   top: 0;
-// }
-
 .header {
   padding: 0 calc(50vw - 585px);
   display: flex;
@@ -43,6 +38,7 @@
           margin-left: 1.56rem;
         }
         .header-nav-menu__link {
+          font-family: $font-proxima-semibold;
           text-decoration: none;
           color: #ffffff;
         }
@@ -59,11 +55,13 @@
     &__title {
       text-align: center;
       max-width: 950px;
+      font-family: $font-proxima-bold;
       font-size: 3.75em;
       text-transform: uppercase;
     }
     &__subtitle {
       max-width: 650px;
+      font-family: $font-pt-italic;
       font-size: 1.875em;
     }
   }
@@ -83,6 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
     text-align: center;
     background: url(/img/about-us_img.png);
     &-icon {
@@ -91,6 +90,7 @@
       &__text {
         width: 183px;
         text-align: center;
+        font-family: $font-proxima-semibold;
         font-size: 2.25em;
         text-transform: uppercase;
         color: #ffffff;
@@ -106,18 +106,21 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
+    font-family: $font-pt-regular;
     font-size: 1.25em;
     color: #665f60;
     &__text_bold {
+      font-family: $font-pt-bold;
     }
     &__btn {
       width: 195px;
       height: 55px;
+      margin: 100px 0;
+      font-family: $font-pt-italic;
       background-color: #ebebeb;
       color: #7d7a7c;
       outline: none;
       border: 1px solid #7d7a7c;
-      margin: 100px 0;
     }
   }
 }
@@ -144,11 +147,13 @@
       color: #665f60;
       &__title {
         margin: 30px 0 25px 0;
+        font-family: $font-pt-bold;
         font-size: 24px;
       }
       &__sub-title {
         margin: 0 auto;
         max-width: 190px;
+        font-family: $font-pt-italic;
         font-size: 18px;
         text-align: center;
       }
@@ -172,15 +177,20 @@
       margin-top: 100px;
     }
     &__title {
+      font-family: $font-proxima-semibold;
       font-size: 36px;
       text-align: center;
     }
     &__sub-title {
       margin: 0 auto;
       margin-top: 120px;
-      max-width: 300px;
+      max-width: 350px;
+      font-family: $font-pt-italic;
       font-size: 18px;
       text-align: center;
+      &_bold {
+        font-family: $font-pt-bold;
+      }
     }
   }
 }
@@ -198,6 +208,7 @@
     color: #fefcfd;
     &__title {
       margin: 35px 0 70px 0;
+      font-family: $font-proxima-semibold;
       font-size: 36px;
     }
   }
@@ -209,6 +220,7 @@
       width: 195px;
       height: 50px;
       border: 1px solid #ffffff;
+      font-family: $font-pt-italic;
       outline: none;
       color: #ffffff;
       background-color: transparent;
@@ -281,6 +293,7 @@
   &-content {
     padding-top: 90px;
     text-align: center;
+    font-family: $font-proxima-semibold;
     font-size: 36px;
     color: #665f60;
   }
@@ -340,4 +353,9 @@
       background: url(/img/team-slider_arrow-right.png) 0 0 / 100% no-repeat;
     }
   }
+}
+
+#map {
+  height: 400px;
+  width: 500px;
 }
