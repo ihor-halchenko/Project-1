@@ -1,5 +1,15 @@
 "use strict";
 
+$(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 300) {
+      $(".header-nav").addClass(" sticky-menu ");
+    } else {
+      $(".header-nav").removeClass(" sticky-menu ");
+    }
+  });
+});
+
 $(document).ready(function () {
   $(".works-slider").slick({
     arrows: true,

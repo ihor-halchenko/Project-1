@@ -3,6 +3,11 @@
 @import "_fonts.scss";
 @import "_mixins.scss";
 
+// .sticky-menu {
+//   position: fixed;
+//   top: 0;
+// }
+
 .header {
   padding: 0 calc(50vw - 585px);
   display: flex;
@@ -12,12 +17,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, bottom;
+  .sticky-menu {
+    position: fixed;
+    top: 0;
+  }
   .header-nav {
     padding-top: 2.18rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    z-index: 999;
+    width: 100%;
+    // transition: 10s;
+
     .header-nav-menu {
+      padding-left: 0;
       display: flex;
       justify-content: center;
       align-items: center;

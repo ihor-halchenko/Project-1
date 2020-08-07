@@ -348,13 +348,20 @@ template {
   background-size: cover;
   background-position: center, bottom;
 }
+.header .sticky-menu {
+  position: fixed;
+  top: 0;
+}
 .header .header-nav {
   padding-top: 2.18rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  z-index: 999;
+  width: 100%;
 }
 .header .header-nav .header-nav-menu {
+  padding-left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
