@@ -190,7 +190,7 @@ template {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100vh;
-  background: url(../img/header_bg.png);
+  background: url(/img/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, bottom;
