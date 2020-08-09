@@ -409,7 +409,7 @@ template {
   -ms-flex-align: start;
   align-items: flex-start;
   text-align: center;
-  background: url(/img/about-us_img.png);
+  background: url(../img/about-us_img.png);
 }
 .about-content-icon {
   padding-top: 4.6875em;
@@ -548,7 +548,7 @@ template {
   height: 800px;
   width: 33%;
   text-align: center;
-  background: url(/img/our-services_bg1.png);
+  background: url(../img/our-services_bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -594,7 +594,7 @@ template {
 .works {
   padding: 0 calc(50vw - 635px);
   height: 100%;
-  background: url(/img/works-bg.png);
+  background: url(../img/works-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -660,11 +660,11 @@ template {
 }
 .works .works-slider .slick-prev {
   left: 0;
-  background: url(/img/works_slider_arrow-left.png) 0 0/100% no-repeat;
+  background: url(../img/works_slider_arrow-left.png) 0 0/100% no-repeat;
 }
 .works .works-slider .slick-next {
   right: 0;
-  background: url(/img/works_slider_arrow-right.png) 0 0/100% no-repeat;
+  background: url(../img/works_slider_arrow-right.png) 0 0/100% no-repeat;
 }
 .works .works-slider .slick-dots {
   padding-left: 0;
@@ -791,11 +791,11 @@ template {
 }
 .team-slider .slick-prev {
   left: 0;
-  background: url(/img/team-slider_arrow-left.png) 0 0/100% no-repeat;
+  background: url(../img/team-slider_arrow-left.png) 0 0/100% no-repeat;
 }
 .team-slider .slick-next {
   right: 0;
-  background: url(/img/team-slider_arrow-right.png) 0 0/100% no-repeat;
+  background: url(../img/team-slider_arrow-right.png) 0 0/100% no-repeat;
 }
 .map {
   position: relative;
