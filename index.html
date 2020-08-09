@@ -3,31 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="http://faviconka.ru/ico/faviconka_ru_100.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://faviconka.ru/ico/faviconka_ru_100.ico"
+      type="image/x-icon"
+    />
+    <meta name="description" content="CreativE Digital Project" />
     <link rel="stylesheet" href="/css/all.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Digital Products</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="header-nav">
         <div class="header-nav-logo">
           <img src="/img/Logo.png" alt="logo" />
         </div>
+        <input type="checkbox" name="" id="menu" />
+        <label class="menu__btn" for="menu">
+          <span></span>
+        </label>
         <ul class="header-nav-menu">
           <li class="header-nav-menu__item">
-            <a class="header-nav-menu__link" href="">Home</a>
+            <a class="header-nav-menu__link" href="#home">Home</a>
           </li>
           <li class="header-nav-menu__item">
-            <a class="header-nav-menu__link" href="">About</a>
+            <a class="header-nav-menu__link" href="#about">About</a>
           </li>
           <li class="header-nav-menu__item">
-            <a class="header-nav-menu__link" href="">Services</a>
+            <a class="header-nav-menu__link" href="#services">Services</a>
           </li>
           <li class="header-nav-menu__item">
-            <a class="header-nav-menu__link" href="">Works</a>
+            <a class="header-nav-menu__link" href="#works">Works</a>
           </li>
           <li class="header-nav-menu__item">
-            <a class="header-nav-menu__link" href="">Contact</a>
+            <a class="header-nav-menu__link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -41,10 +56,10 @@
     </header>
     <body>
       <main>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about-content">
             <div class="about-content-icon">
-              <img src="/img/Icon-AboutUs.png" alt="icon" />
+              <img src="/img/Icon-AboutUs.png" alt="icon-about-us" />
               <h2 class="about-content-icon__text">About Us</h2>
             </div>
           </div>
@@ -68,7 +83,7 @@
             <button class="about-description__btn">Learn More</button>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <div class="services-list">
             <div class="services-list-item services-list-item_color">
               <img
@@ -130,7 +145,7 @@
             </p>
           </div>
         </section>
-        <section class="works">
+        <section class="works" id="works">
           <div class="works-content">
             <img
               class="works-content__icon"
@@ -141,16 +156,16 @@
           </div>
           <div class="works-slider">
             <div class="works-slider-item">
-              <img src="/img/works-slider_img.png" alt="" />
+              <img src="/img/works-slider_img.png" alt="slide" />
             </div>
             <div class="works-slider-item">
-              <img src="/img/works-slider_img.png" alt="" />
+              <img src="/img/works-slider_img.png" alt="slide" />
             </div>
             <div class="works-slider-item">
-              <img src="/img/works-slider_img.png" alt="" />
+              <img src="/img/works-slider_img.png" alt="slide" />
             </div>
             <div class="works-slider-item">
-              <img src="/img/works-slider_img.png" alt="" />
+              <img src="/img/works-slider_img.png" alt="slide" />
             </div>
           </div>
           <div class="works-block">
@@ -159,12 +174,12 @@
         </section>
         <section class="team">
           <div class="team-content">
-            <img src="/img/Icon-Team.png" alt="" />
+            <img src="/img/Icon-Team.png" alt="Icon-Team" />
             <h3>MEET OUR TEAM</h3>
           </div>
           <div class="team-slider">
             <div class="team-slider-item">
-              <img src="/img/team-slide_img1.png" alt="" />
+              <img src="/img/team-slide_img1.png" alt="slide" />
               <div class="team-slider-item-social">
                 <div class="team-slider-item-social__icon">
                   <a href="https://www.facebook.com/" target="_blank"
@@ -185,33 +200,7 @@
               </div>
             </div>
             <div class="team-slider-item">
-              <img src="/img/team-slide_img2.png" alt="" />
-              <div class="team-slider-item-social">
-                <div class="team-slider-item-social__icon">
-                  <a href="https://www.facebook.com/" target="_blank"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                </div>
-
-                <div class="team-slider-item-social__icon">
-                  <a href="https://www.linkedin.com/" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </div>
-                <div class="team-slider-item-social__icon">
-                  <a href="https://twitter.com/" target="_blank"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                </div>
-                <div class="team-slider-item-social__icon">
-                  <a href="https://www.behance.net/" target="_blank"
-                    ><i class="fab fa-behance"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="team-slider-item">
-              <img src="/img/team-slide_img3.png" alt="" />
+              <img src="/img/team-slide_img2.png" alt="slide" />
               <div class="team-slider-item-social">
                 <div class="team-slider-item-social__icon">
                   <a href="https://www.facebook.com/" target="_blank"
@@ -236,9 +225,35 @@
                 </div>
               </div>
             </div>
+            <div class="team-slider-item">
+              <img src="/img/team-slide_img3.png" alt="slide" />
+              <div class="team-slider-item-social">
+                <div class="team-slider-item-social__icon">
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </div>
+
+                <div class="team-slider-item-social__icon">
+                  <a href="https://www.linkedin.com/" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="team-slider-item-social__icon">
+                  <a href="https://twitter.com/" target="_blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </div>
+                <div class="team-slider-item-social__icon">
+                  <a href="https://www.behance.net/" target="_blank"
+                    ><i class="fab fa-behance"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
 
             <div class="team-slider-item">
-              <img src="/img/team-slide_img1.png" alt="" />
+              <img src="/img/team-slide_img1.png" alt="slide" />
               <div class="team-slider-item-social">
                 <div class="team-slider-item-social__icon">
                   <a href="https://www.facebook.com/" target="_blank"
@@ -260,7 +275,76 @@
             </div>
           </div>
         </section>
-        <section id="map"></section>
+
+        <section class="map" id="contact">
+          <div class="contact">
+            <div class="contact-content">
+              <img src="/img/contact-form_icon.png" alt="icon-marker" />
+              <h3 class="contact-content__title">GET IN TOUCH</h3>
+            </div>
+            <div class="contact-form">
+              <form id="form" class="form" method="POST" name="form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name*"
+                  method="GET"
+                  class="form__name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email*"
+                  method="GET"
+                  class="form__email"
+                  required
+                />
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Your Message*"
+                  class="form__comment"
+                  method="GET"
+                  required
+                ></textarea>
+              </form>
+              <button type="submit" class="contact-form__btn">
+                SEND MESSAGE
+              </button>
+            </div>
+          </div>
+          <div id="map"></div>
+        </section>
+        <footer class="footer">
+          <div class="footer-copyright">
+            <p>©2014 tulusdriyo. All Rights Reserved.</p>
+          </div>
+          <div class="footer-social">
+            <div class="footer-social__icon">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="footer-social__icon">
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="footer-social__icon">
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
+            <div class="footer-social__icon">
+              <a href="https://www.behance.net/" target="_blank"
+                ><i class="fab fa-behance"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
       </main>
     </body>
     <script

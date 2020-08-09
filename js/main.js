@@ -2,7 +2,7 @@
 
 $(function () {
   $(window).scroll(function () {
-    if ($(this).scrollTop() >= 600) {
+    if ($(this).scrollTop() >= 620) {
       $(".header-nav").addClass(" sticky-menu ");
     } else {
       $(".header-nav").removeClass(" sticky-menu ");
@@ -39,20 +39,18 @@ $(document).ready(function () {
 });
 
 function initMap() {
-  var uluru = { lat: 49.0666684, lng: 33.3984375 };
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: uluru,
+  let pos = { lat: 49.0666684, lng: 33.3984375 };
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: pos,
   });
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({ position: uluru, map: map });
+
+  let image = "img/contact-map_icon.png";
+  let marker = new google.maps.Marker({
+    position: pos,
+    map: map,
+    draggable: true,
+    animation: google.maps.Animation.BOUNCE,
+    icon: image,
+  });
 }
-
-// let map;
-
-// function initMap() {
-//   map = new google.maps.Map(document.getElementById("map"), {
-//     center: { lat: 49.06269, lng: 33.408353 },
-//     zoom: 10,
-//   });
-// }
